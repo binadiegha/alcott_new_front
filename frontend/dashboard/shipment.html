@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/hero.css">
+    <link rel="stylesheet" href="../assets/css/price-calc.css">
+    <link rel="stylesheet" href="../assets/css/login-reg.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/tables.css">
+    <link rel="stylesheet" href="./css/shipping-choice.css">
+    <link rel="stylesheet" href="./css/shipment-form.css">
+    <link rel="stylesheet" href="./css/shipment.css">
+    <link rel="stylesheet" href="../node_modules/@mdi/font/css/materialdesignicons.css">
+</head>
+<body>
+
+   
+
+    <!-- <img src="../assets/photos/SVG/cursor.svg" alt=""  class="cursor"> -->
+
+   <nav>
+       <div class="navigation">
+           <div class="nav-left">
+                <div class="brand"><img src="../assets/photos/logo.png" alt="" width="80"></div><!--this is the logo of the company-->
+                <div class="primary-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Track</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+           </div>
+
+           <div class="nav-right">
+               <div id="login-btn" class="btn btn-p">Login</div>
+               <div  id="register-btn" class="btn btn-s">Register</div>
+           </div>
+           
+
+       </div>
+   </nav> 
+
+
+   <div class="sidebar">
+       <div class="sidebar-content">
+           <div class="sidebar-top">
+               <ul>
+                   <li class="side-meni"><span class="mdi mdi-home ic"></span> Dashboard</li>
+                   <li class="side-meni"><span class="mdi mdi-wallet ic"></span> Wallet</li>
+                   <li class="side-meni"><span class="mdi mdi-arrow-top-right ic"></span> Shipments</li>
+                   <li class="side-meni"><span class="mdi mdi-home ic"></span> Dashboard</li>
+               </ul>
+           </div>
+
+           <div class="sidebar-bottom">
+            <ul>
+                
+                <li class="side-meni-alt"><span class="mdi mdi-cog ic"></span> Setting</li>
+                <li class="side-meni-alt"><span class="mdi mdi-logout ic"></span> Logout</li>
+            </ul>
+
+            <p class="tiny-font"> Developed by Xpletsquare &copy; Alcott 2021</p>
+        </div>
+       </div>
+
+
+   </div>
+
+   <div class="paynow">
+        <div class="paycontent">
+
+            <!-- total ammounts start -->
+            <div class="item-value kmo">
+                <div class="titleSmall">
+                    Item(s) value
+                </div>
+                <div class="big-bold-text">
+                    $14,500
+                </div>
+            </div>
+            <!--  totlal ammounts -->
+
+            <div class="form-holder pos-rel w100 ">
+                <div class="custom-input in-reset">
+            
+                    <input class="input-main numm in-reset" type="text"  pattern="[0-9]">
+                    <div class="placeholder">Enter weight (Kg)</div>
+                </div>
+            </div>
+
+            <!-- btn -->
+
+            <div class="span100">
+                <div class="btn btn-p btn-large mtb-2 w100 bdr-rst">
+                    Apply coupon
+                </div>
+            </div>
+            <!-- end of btn -->
+
+            <div class="hr-tin"></div>  
+
+            <div class="btn-space new_shipment btn-def">
+                <span class="mdi mdi-cash ic"></span>
+                 Pay now
+            </div>
+
+
+        </div>
+
+        <div class="backk2">
+            <span class="mdi mdi-wallet"></span>Pay from Wallet ballance
+        </div>
+   </div>
+
+
+   <section class="dashmain-holder">
+       <div class="dash-main">
+           
+           <div class="search-section">
+               <div class="search">
+                    <input type="text" class="search-input">
+               </div>
+
+               <div class="btn-space new_shipment">
+                   <span class="mdi mdi-plus ic"></span>
+                    New Shippment
+               </div>
+           </div>
+
+          
+
+           <!-- table section -->
+
+          <div class="shipment-form">
+            
+
+            <form action="#" class="flex-form " >
+                <div class="flex-form-slate">
+
+                    
+
+             
+
+
+            <div class="form-tab">
+
+                <div class="spanto100">
+                    <div class=" title3 ">
+                        Shipment
+                    </div>
+                    <div class="backk2">
+                        <span class="mdi mdi-arrow-left"></span>Back
+                    </div>
+                    
+                </div>
+               
+
+
+                <div class="shipment-summary">
+                    <div class="payment-status">
+                        <h2>
+                            UNPAID
+                        </h2>
+                    </div>
+
+                    <div class="qr-holder w100 flex">
+                        <div class="qr-holder-left w70">
+
+                            <!-- item starts here -->
+                            <div class="param-item">
+                                <div class="titleSmall">
+                                    Shipment ID
+                                </div>
+                                <div id="sender_email" class="norm-value mail-color">
+                                    463473948934h347
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                            <div class="item-desc">
+                                <h3 class="titleSmall">Item Description</h3>
+                                <p class="norm-value">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse blanditiis iure eum! Exercitationem, quae beatae quos dolor doloribus quaerat fugiat molestias ex inventore vero, repellat saepe repellendus soluta non, debitis rerum vel similique? Eaque vero ullam quos sed dolore. Quo.</p>
+                            </div>
+        
+                        </div>
+
+                        <div class="qr-holder-right w30 flex">
+                            <img src="./img/barcode.png" alt="">
+                        </div>
+                    </div>
+                    
+                    <div class="params w100 flex">
+                        <div class="item-value b-right w50">
+                            <div class="titleSmall">
+                                Item(s) value
+                            </div>
+                            <div class="big-bold-text">
+                                $14,500
+                            </div>
+                        </div>
+
+                        <div class="item-value w50 flex column end">
+                            <div class="titleSmall">
+                                Item(s) value
+                            </div>
+                            <div class="big-bold-text">
+                                13.7 kg
+                            </div>
+                        </div>
+
+                       
+
+                    </div>
+
+                    <div class="param-values">
+                        <div class="param-sec-a">
+
+                            <!-- item starts here -->
+                            <div class="param-item">
+                                <div class="titleSmall">
+                                    Sender name
+                                </div>
+                                <div id="sender_name" class="norm-value">
+                                    John Doe
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div  class="titleSmall">
+                                    Sender Phone
+                                </div>
+                                <div id="sender_phone" class="norm-value">
+                                    +234 81224 2424
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Sender email
+                                </div>
+                                <div id="sender_email" class="norm-value mail-color">
+                                    jbg4k.connect@gmail.com
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup Address
+                                </div>
+                                <div id="pickup_address" class="norm-value">
+                                    26 Broad Street, Ikoyi
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup city
+                                </div>
+                                <div id="pickup_city" class="norm-value">
+                                    26 Broad Street, Ikoyi
+                                    
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup country
+                                </div>
+                                <div id="pickup_country" class="norm-value">
+                                    Nigeria
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup ZIP
+                                </div>
+                                <div id="pickup_ZIP" class="norm-value">
+                                    12234
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+                        </div>
+
+                        <div class="param-sec-b">
+                            <div class="shapee">
+                                <span class="mdi mdi-arrow-right shp-md">
+
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="param-sec-c">
+
+                                                        <!-- item starts here -->
+                            <div class="param-item">
+                                <div class="titleSmall">
+                                    Sender name
+                                </div>
+                                <div id="sender_name" class="norm-value">
+                                    John Doe
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div  class="titleSmall">
+                                    Sender Phone
+                                </div>
+                                <div id="sender_phone" class="norm-value">
+                                    +234 81224 2424
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Sender email
+                                </div>
+                                <div id="sender_email" class="norm-value mail-color">
+                                    jbg4k.connect@gmail.com
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup Address
+                                </div>
+                                <div id="pickup_address" class="norm-value">
+                                    26 Broad Street, Ikoyi
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup city
+                                </div>
+                                <div id="pickup_city" class="norm-value">
+                                    Lagos
+                                    
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup country
+                                </div>
+                                <div id="pickup_country" class="norm-value">
+                                    Nigeria
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+
+                             <!-- item starts here -->
+                             <div class="param-item">
+                                <div class="titleSmall">
+                                    Pickup ZIP
+                                </div>
+                                <div id="pickup_ZIP" class="norm-value">
+                                    12234
+                                </div>
+                            </div>
+                            <!-- item ends here -->
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="span100">
+                    <div class="btn btn-p btn-large mtb-2">
+                        Proceed
+                    </div>
+                </div>
+                <!-- stop -->
+        </div>
+
+
+
+        <!-- fghkhfkjjk -->
+                </div>
+               
+                
+
+            </form>
+          </div>
+       </div>
+   </section>
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../data.js"></script>
+<script src="table-updater.js"></script>
+
+<script src="../assets/js/input-focus.js"></script>
+<!-- <script src="../assets/js/loginSlider.js"></script> -->
+
+
+<script>
+    let formslate = document.querySelector('.flex-form-slate');
+    let formNext = document.querySelector('.formNext');
+    let backk = document.querySelector('.backk');
+    let backk2 = document.querySelector('.backk2');
+    let proceedd = document.querySelector('.proceedd');
+    let lastItem = document.querySelector('.lst-itm');
+    let lastItem2 = document.querySelector('.lst-itm2');
+
+    formNext.addEventListener('click', pusher);
+    backk.addEventListener('click', pusher);
+    backk2.addEventListener('click', pusher200);
+    lastItem.addEventListener('keydown', keycheck);
+    lastItem2.addEventListener('keydown', keycheck2);
+    proceedd.addEventListener('click', pusher200)
+
+    function pusher(){
+        formslate.classList.toggle('pushm100');
+    };
+
+    function pusher200(){
+        formslate.classList.toggle('pushm200');
+    }
+
+
+    function keycheck(e){
+        // console.log(event.keyCode);
+        if (e.keyCode == 9 ){
+            pusher();
+        }
+    }
+    function keycheck2(e){
+        // console.log(event.keyCode);
+        if (e.keyCode == 9 ){
+            pusher200();
+        }
+    }
+
+   
+
+
+</script>
+
+<!-- 
+<script>
+    let cursor = document.querySelector('.cursor');
+
+    window.addEventListener('mousemove', changePos);
+
+    function changePos(e){
+        cursor.style.top = e.pageY + 'px';
+        cursor.style.left = e.pageX + 'px';
+    }
+
+    // sound
+    let box = document.querySelectorAll('.card-box');
+    let sound = document.querySelector('#sound');
+
+    
+
+    box.forEach(element => {
+        element.addEventListener('mouseenter', function() {
+            sound.play();
+        });
+
+        element.addEventListener('mouseleave', function() {
+            sound.pause();
+            console.log('leave...');
+        });
+    });
+    
+    // function playSound(){
+    //     sound.play();
+    // }
+</script> -->
+
+<!-- <script>
+    let carosel1 = document.querySelector('.shipping-choice-bg');
+    let cncle = document.querySelector('.cncle');
+    let new_shipment = document.querySelector('.new_shipment');
+
+    new_shipment.addEventListener('click', () => {
+        carosel1.classList.toggle('push-down');
+    });
+
+    cncle.addEventListener('click', ()=> {
+        carosel1.classList.toggle('push-down');
+    })
+    
+</script> -->

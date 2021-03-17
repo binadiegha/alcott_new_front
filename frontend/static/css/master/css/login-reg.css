@@ -1,0 +1,103 @@
+*{
+    scroll-behavior: smooth;
+}
+.login-register{
+    width: 30%;
+    height: 80%;
+    box-shadow: 0px 0px 5rem rgba(0, 0, 0, 0.452);
+    /* border: 1px solid red; */
+    display: flex;
+    position: absolute;
+    /* flex-direction: column; */
+    top: 5rem;
+    right: -100%;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 150;
+
+
+}
+.reg-photo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem 1rem 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reg-photo{
+    height: 50ch;
+    width: 100%;
+    background-color: blue;
+}
+
+
+.reg-holder{
+    overflow-y: scroll ;
+    min-height: 70%;
+    scrollbar-width: none;
+   
+}
+
+.photo-half{
+    height: 25ch;
+}
+.reg-holder, .log-holder{
+    position: relative;
+    height: 50ch;
+    padding: 3rem 2.5rem;
+}
+.input-main{
+    width: 100%;
+}
+
+.btn-full{
+    width: 100%;
+    padding: 1.3rem 1rem !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loggg{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+
+.register-sec{
+    min-width: 100%;
+}
+
+.login-sec{
+    min-width: 100%;
+    min-height: 80vh;
+}
+
+.lr-whole{
+    min-height: 100%;
+    min-width:100%;
+    display: flex;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* transform: translateX(-100%); */
+}
+
+.cancel{
+    position: absolute;
+    padding: 1rem;
+    background-color: blue;;
+    z-index: 200;
+    width: 3rem;
+    height: 3rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    color: white;
+}

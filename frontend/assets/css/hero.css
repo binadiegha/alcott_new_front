@@ -1,0 +1,77 @@
+.hero{
+    width: 100%;
+}
+
+.hero  .main{
+    margin: 10%;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shape-n-img{
+    position: relative;
+    margin: 2rem;
+}
+
+.shp{
+    position: absolute;
+    top: 10%;
+}
+.shp1{
+    animation-name: rotateA;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotateA{
+    from {
+        transform: scale(1.1,1.1) rotate(0deg);
+    }
+    to {
+        transform: scale(1.2.1.2) rotate(360deg);   
+    }
+}
+
+
+.shp2{
+    transform: translate(1rem, 1rem);
+    animation-name: rotateB;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;  
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotateB{
+    from {
+        transform:  translate(2rem, 2rem);
+    }
+    to {
+        transform: translate(-2rem, -2rem);   
+    }
+}
+
+.main-left,
+.main-right{
+    display: flex;
+    width: 50%;
+    height:inherit;
+    /* border: 1px solid red; */
+}
+
+.main-right{
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}

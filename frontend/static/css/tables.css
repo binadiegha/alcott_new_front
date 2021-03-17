@@ -1,0 +1,57 @@
+.table-section{
+    width: 100%;
+    height: 4rem;
+    /* border: 1px solid red; */
+    margin: 2rem 0;
+}
+
+.sub-title{
+    font-size: 1.1rem;
+    margin: .5rem 0;
+}
+
+.table-a table {
+    width: 100%;
+    height: 2rem;
+}
+
+.tgrey{
+    color: rgb(175, 175, 175) !important;
+}
+
+.no-display{
+    display: none;
+}
+.ini{
+    font-size: 2rem;
+}
+
+.ntxt{
+    font-size: 1.2rem;
+    height: 3.5rem;
+    /* background-color: red; */
+    /* color: white; */
+}
+.ntxt > td{
+    border: none;
+ 
+}
+
+
+.green{
+    color: rgb(0, 187, 78);
+}
+
+.red{
+    color: rgb(218, 0, 0);
+}
+
+.ntxt{
+    cursor: pointer;
+}
+.tblast{
+    text-align: end;
+}
+.ntxt:hover{
+    background-color: rgba(128, 128, 128, 0.13);
+}

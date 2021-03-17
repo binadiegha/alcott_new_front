@@ -1,0 +1,276 @@
+.price-calc{
+    width: 100%;
+}
+
+.price-calc  .main{
+    margin: 10%;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-input{
+    margin: 1rem 0 4rem 0;
+    position: relative;
+}
+
+.input-main{
+    width: 70%;
+    height: 4rem;
+    border: 1px solid #6061E0;
+    background-color: #6060e015;
+    border-radius: 10px;
+    position: absolute;
+}
+
+input{
+    font-size: 1.1rem;
+    padding: 1.5rem 1rem .8rem 1rem;
+}
+.input-main:focus{
+    outline: none;
+}
+.placeholder{
+    position: absolute;
+    left: 1rem;
+    top: .3rem;
+    color: #5959d4;
+    transform: scale(2,2);
+    transform-origin: left;
+    transform: translate(0rem, 1rem);
+    transition: all .12s cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    pointer-events: none;
+}
+
+/* .input-main:focus ~ .placeholder{
+    transform: scale(.8,.8);
+    transform-origin: left;  
+} */
+
+.onfocus{
+    /* display: none; */
+    transform: scale(.8,.8);
+    transform-origin: left;
+    /* transform: translate(0rem, 1rem); */
+    
+}
+
+.col-b{
+    display: flex;
+    flex-direction: column;
+}
+
+.sim-l{
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.sim{
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.shpd{
+    position: absolute;
+}
+
+.shp1d-1{
+    /* top: 3%; */
+    margin: auto;
+    width: 100%;
+}
+
+.shp1d-2{
+    /* top: 8rem; */
+    /* left: 8rem; */
+    width: 80%;
+    /* display: none; */
+}
+
+.shp1d-3{
+    /* top: 5%; */
+    /* left: 0%; */
+    width: 100%;
+    /* display: none; */
+}
+
+.shp1d-4{
+    /* top: 13rem; */
+    /* left: 12rem; */
+    margin: 10rem auto;
+    width: 100%;
+    /* border: 2px solid green; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.shp1d-4 img{
+    width: 60%;
+}
+.price-value{
+    font-size: 4rem;
+    font-weight: 600;
+    /* position: absolute; */
+    top: 27rem;
+    left: 19rem;
+    color: #2E2FE0;
+}
+
+.weight-value-holder{
+    width: max-content;
+    height: max-content;
+    padding:2rem 3rem;
+    background-color: #2E2FE0;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-radius: 50ch;
+    /* movement */
+    position: absolute;
+    bottom: 8rem;
+    right: 20%;
+}
+*{
+    /* border: 1px solid red; */
+}
+
+
+.shp1d-1{
+    transform: translate(1rem, 1rem);
+    animation-name: rotateO;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;  
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotateO{
+    from {
+        transform:  rotate(0deg);
+    }
+    to {
+        transform: rotate(-720deg); 
+    }
+}
+
+.shp1d-2{
+    transform: translate(1rem, 1rem);
+    animation-name: rotateC;
+    animation-duration: 30s;
+    /* animation-timing-function: ease-in-out; */
+    animation-direction:alternate;  
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotateC{
+    from {
+        transform:  rotate(0deg);
+    }
+    to {
+        transform: rotate(720deg ); 
+    }
+}
+
+
+.weight-value-holder{
+    transform: translate(1rem, 1rem);
+    animation-name: rotateB;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;  
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes rotateB{
+    from {
+        transform:  translate(1rem, 1rem);
+    }
+    to {
+        transform: translate(-1rem, -1rem);   
+    }
+}
+
+.shp1d-4, .qanim{
+    transform: translate(1rem, 1rem);
+    animation-name: hoverA;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;  
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes hoverA{
+    from {
+        transform:  translate(0rem, 1rem);
+    }
+    to {
+        transform: translate(0rem, -1rem);   
+    }
+}
+
+
+
+/* price calc */
+
+.tabss{
+    display: flex;
+    width: 100%;
+    margin: 1rem 0;
+    /* border: 1px solid red; */
+}
+.tabb{
+    height: 4rem;
+    width: max-content;
+    padding: 2rem;
+    border: 1px solid #2E2FE0;
+    border-radius: 10px;
+    color: #2E2FE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.tabb:hover{
+    background-color: #2E2FE0;
+    color: white;
+}
+
+.tabb-active{
+    background-color: #2E2FE0;
+    color: white;
+}
+
+.price-fields{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin-right: 3%;
+}
+
+.price-fields-holder{
+    display: flex;
+    
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* width: 300%; */
+}
+
+.price-parent{
+    overflow-x: hidden;
+}

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
+    <link rel="stylesheet" href="./assets/css/price-calc.css">
+    <link rel="stylesheet" href="./assets/css/login-reg.css">
+    <link rel="stylesheet" href="./assets/css/loader.css">
+    <link rel="stylesheet" href="./node_modules/@mdi/font/css/materialdesignicons.css">
+
+    <script type="module" src="./static/js/index.js"></script>
+</head>
+<body>
+
+    <img src="./assets/photos/SVG/cursor.svg" alt=""  class="cursor">
+
+   <nav>
+       <div class="navigation">
+           <div class="nav-left">
+                <div class="brand"><img src="./assets/photos/logo.png" alt="" width="80"></div><!--this is the logo of the company-->
+                <div class="primary-links">
+                    <ul>
+                        <li><a href="#" data-link>Home</a></li>
+                        <li><a href="#" data-link>Track</a></li>
+                        <li><a href="#" data-link>About</a></li>
+                    </ul>
+                </div>
+           </div>
+
+           <div class="nav-right">
+               <div id="login-btn" class="btn btn-p">Login</div>
+               <div  id="register-btn" class="btn btn-s">Register</div>
+           </div>
+           
+
+       </div>
+   </nav> 
+
+
+   <!-- main section -->
+   <section class="hero">
+        <div class="main">
+            <div class="main-left">
+                <div class="shape-n-img">
+                    <img class="shp shp1" src="./assets/photos/shape-fill.svg" alt="" width="">
+                    <img class="shp shp2" src="./assets/photos/shape-stroke.svg" alt=""  width="">
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="code-block">
+                    <h1 class="big-title">Alcott</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente, qui eligendi tempore laborum quam eaque cumque, vitae odio praesentium, ex aspernatur id impedit facere odit placeat magnam commodi quas officiis. Voluptate pariatur sapiente, nobis officiis fugiat eligendi veniam illum odio quasi delectus quibusdam temporibus exercitationem suscipit explicabo maiores facilis quae?</p>
+
+                    <div class="btn btn-p btn-large">Get started </div>
+                </div>
+
+               
+
+            </div>
+        </div>
+   </section>
+
+   <section class="price-calc">
+       <div class="main">
+
+
+       
+        <div class="main-right">
+            <div class="code-block col-b">
+                <h1 class="big-title">Price Calculator</h1>
+
+                <div class="tabss">
+                    <div class="tabb tabb-active">
+                        International
+                    </div>
+
+                    <div class="tabb">
+                        Local
+                    </div>
+
+                    <div class="tabb">
+                        Instant
+                    </div>
+
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo sapiente, qui eligendi tempore laborum quam eaque cumque, vitae odio praesentium.</p>
+
+              
+                <div class="price-parent">
+                    <div class="price-fields-holder">
+
+                        <div class="price-fields">
+                            <div class="custom-input">
+                           
+                                <select class="input-main countriesList" type="text">
+                                    <option value="">Select pickup location</option>
+                                </select>
+                                <div  class="placeholder" style="display: none;">Enter drop-off location</div>
+                            </div>
+        
+        
+                            <div class="custom-input">
+                           
+                                <select class="input-main countriesList" type="text">
+                                    <option value="">Select dropoff location</option>
+                                </select>
+                                <div  class="placeholder" style="display: none;">Enter drop-off location</div>
+                            </div>
+        
+        
+                            <div class="custom-input">
+                           
+                                <input  class="input-main numm localStart" type="text"  pattern="[0-9]">
+                                <div class="placeholder">Enter weight (Kg)</div>
+                            </div>
+                         
+                            <div class="btn btn-p btn-large">International</div>
+                        </div>
+                        <!-- price field ends here -->
+                        
+                        <div class="price-fields">
+                            <div class="custom-input">
+                           
+                                <input class="input-main" type="text">
+                                <div class="placeholder">Enter pickup location</div>
+                            </div>
+        
+        
+                            <div class="custom-input">
+                           
+                                <input class="input-main" type="text">
+                                <div class="placeholder">Enter drop-off location</div>
+                            </div>
+        
+        
+                            <div class="custom-input">
+                           
+                                <input  class="input-main numm" type="text"  pattern="[0-9]">
+                                <div class="placeholder">Enter weight (Kg)</div>
+                            </div>
+                         
+                            <div class="btn btn-p btn-large">Local </div>
+                        </div>
+                        <!-- price field ends here -->
+                        
+                        
+                        <div class="price-fields">
+                            <div class="custom-input">
+                           
+                                <input class="input-main" type="text">
+                                <div class="placeholder">Enter pickup location</div>
+                            </div>
+        
+        
+                            <div class="custom-input">
+                           
+                                <input class="input-main" type="text">
+                                <div class="placeholder">Enter drop-off location</div>
+                            </div>
+        
+        
+                            <div class="custom-input">
+                           
+                                <input  class="input-main numm threee" type="text"  pattern="[0-9]">
+                                <div class="placeholder">Enter weight (Kg)</div>
+                            </div>
+                         
+                            <div class="btn btn-p btn-large">Instant</div>
+                        </div>
+                        <!-- price field ends here -->
+                            
+                    </div>
+                    <!-- price-fields-holder ends here -->
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+        <div class="main-left sim-l">
+            <div class=" sim">
+                <img class="shpd shp1d-1" src="./assets/photos/Path-7.svg" alt="" width="">
+                <img class="shpd shp1d-2" src="./assets/photos/Path-5.svg" alt=""  width="">
+
+                <img class="shpd shp1d-3" src="./assets/photos/Path-6.svg" alt=""  width="">
+
+                <div class="shpd shp1d-4">
+                    <img class="hy" src="./assets/photos/Path-8.svg" alt=""  width="">
+
+    
+
+                    <div class="weight-value-holder">
+                        <span class="wit">00</span> kg
+                    </div>
+                </div>
+
+                <div class="price-value qanim">
+                    &#8358; <span class="pricee">0.00</span> 
+                </div>
+                
+
+
+                
+                
+            </div>
+        </div>
+
+        
+       </div>
+   </section>
+   
+   <div class="login-register">
+    <div class="cancel"> x</div>
+   
+       <div class="lr-whole">
+
+            <div class="login-sec">
+
+            <div class="loggg">
+                <div class="reg-photo" style="background-image: url('./assets/photos/mix.jpg')">
+    
+                </div>
+                <div class="reg-holder">
+        
+                    <div class="error-alert"> 
+                        <div class="inner-error-text">Lorem ipsum dolor sit</div>
+                        <div class="alert-text">
+                            <span class="mdi mdi-close"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="code-block col-b">
+                            <div class="custom-input">
+                                <input id="loginEmail" class="input-main" type="email">
+                                <div class="placeholder">Email</div>
+                            </div>
+                    </div>
+        
+        
+                    <div class="code-block col-b">
+                        <div class="custom-input">
+                            <input id="loginPassword" class="input-main" type="password">
+                            <div class="placeholder">Password</div>
+                        </div>
+                    </div>
+        
+                    <div id="login" class="btn btn-p btn-large btn-full">login </div>
+        
+                
+        
+                    
+                </div>
+                
+            </div>
+            
+           </div>
+    
+           <div class="register-sec">    
+            <div class="reg-photo photo-half" style="background-image: url('./assets/photos/mix.jpg')">
+    
+            </div>
+            <div class="reg-holder">
+    
+                <div class="code-block col-b">
+                        <div class="custom-input">
+                            <input id="email" class="input-main" type="email">
+                            <div class="placeholder">Firstname</div>
+                        </div>
+                </div>
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="email" class="input-main" type="email">
+                        <div class="placeholder">Lastname</div>
+                    </div>
+                </div>
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="email" class="input-main" type="email">
+                        <div class="placeholder">Email</div>
+                    </div>
+                </div>
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="password" class="input-main" type="password">
+                        <div class="placeholder">Password</div>
+                    </div>
+                </div>
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="password" class="input-main" type="password">
+                        <div class="placeholder">Confirm Password</div>
+                    </div>
+                </div>
+
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="email" class="input-main" type="email">
+                        <div class="placeholder">Phone</div>
+                    </div>
+                </div>
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="email" class="input-main" type="email">
+                        <div class="placeholder">Address</div>
+                    </div>
+                </div>
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="email" class="input-main" type="email">
+                        <div class="placeholder">State</div>
+                    </div>
+                </div>
+
+                <div class="code-block col-b">
+                    <div class="custom-input">
+                        <input id="email" class="input-main" type="email">
+                        <div class="placeholder">Country</div>
+                    </div>
+                </div>
+
+                
+    
+             
+    
+                <div id="Register" class="btn btn-p btn-large btn-full">Register </div>
+    
+            
+    
+                
+            </div>
+            
+           </div>
+        
+       </div>
+      
+   </div>
+
+
+
+    
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="./assets/js/input-focus.js"></script>
+<script src="./assets/js/loginSlider.js"></script>
+<script src="./userLogin.js"></script>
+<script src="./userRegistration.js"></script>
+<script src="./allcountries.js"></script>
+
+<script>
+
+    let cursor = document.querySelector('.cursor');
+
+    window.addEventListener('mousemove', changePos);
+
+    function changePos(e){
+        cursor.style.top = e.pageY + 'px';
+        cursor.style.left = e.pageX + 'px';
+    }
+
+    let tabb = document.querySelectorAll('.tabb');
+    let tabss = document.querySelectorAll('.tabss');
+    let pfh = document.querySelector('.price-fields-holder');
+    let threee = document.querySelector('.threee');
+    let localStart = document.querySelector('.localStart');
+    let l = tabb.length;
+
+    for (let i = 0; i < l; i++) {
+        // const element = array[i];
+        // console.log(tabb[i]);
+        tabb[i].addEventListener('click', function(){
+          
+            tabb.forEach(element => {
+                element.classList.remove('tabb-active');
+            });
+            tabb[i].classList.add('tabb-active');
+            pfh.style.transform = ` translateX(${-103 * i }%)`;
+            // pfh.style.transform = 'translateX'${-100 * i }`;
+            // animation goes here
+        })      
+    }
+
+    threee.addEventListener('keydown', keycheck);
+    localStart.addEventListener('keydown', keycheck2);
+    
+    function keycheck(e){
+        // console.log(event.keyCode);
+        if (e.keyCode == 9 ){
+            e.preventDefault();
+            console.log('.........')
+        }
+    }
+
+    function keycheck2(e){
+        // console.log(event.keyCode);
+        if (e.keyCode == 9 ){
+            e.preventDefault();
+            console.log('.........');
+        }
+    }
+    
+
+    // let loginnn = document.getElementById('login-btn');
+
+    
+
+async function allCountries(){
+
+    try {
+        let pricee = document.querySelector('.pricee');
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("Cookie", "jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMjcyNTJjZDljYTkxNDA0NDc2NWMzOCIsImlhdCI6MTYxNDQxODM3MiwiZXhwIjoxNjE3MDEwMzcyfQ.nuSYRbLppsvYkcUsQ8AyD_EcBkvo7TtkA-RjYTKfAKs");
+
+        var raw = JSON.stringify({"shipmentType":"domestic","dropoffState":"lagos","pickupState":"ibadan","weight":3});
+
+        var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+        };
+
+        fetch("https://whispering-inlet-62950.herokuapp.com/api/v1/pricing/calculate-domestic-price", requestOptions)
+        .then(response => response.json())
+        .then(result => {
+            console.log(result)
+            pricee.innerHTML = result.data.data
+        })
+        .catch(error => console.log('error', error));
+        
+    } catch (error) {
+      console.log(error);  
+    }
+
+}
+
+           
+allCountries(); 
+
+
+
+
+    
+</script>

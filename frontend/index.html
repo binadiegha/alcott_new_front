@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="static/css/master/css/reset.css">
+    <link rel="stylesheet" href="static/css/master/css/nav.css">
+    <link rel="stylesheet" href="static/css/master/css/hero.css">
+    <link rel="stylesheet" href="static/css/master/css/price-calc.css">
+    <link rel="stylesheet" href="static/css/master/css/login-reg.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/tables.css">
+    <link rel="stylesheet" href="static/css/shipping-choice.css">
+    <link rel="stylesheet" href="static/css/shipment-form.css">
+
+    <!-- shipment -->
+
+    <!-- <link rel="stylesheet" href="static/css/master/css/loader.css"> -->
+    <link rel="stylesheet" href="..frontend/node_modules/@mdi/font/css/materialdesignicons.css">
+
+    <!-- script -->
+    <script type="module" src="./static/js/index.js"></script>
+</head>
+<body class="body">
+
+
+    <!-- <img src="../assets/photos/SVG/cursor.svg" alt=""  class="cursor"> -->
+
+   <nav>
+       <div class="navigation">
+           <div class="nav-left">
+                <div class="brand"><img src="static/photos/logo.png" alt="" width="80"></div><!--this is the logo of the company-->
+                <div class="primary-links">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Track</a></li>
+                        <li><a href="/">About</a></li>
+                    </ul>
+                </div>
+           </div>
+
+           <div class="nav-right">
+               <div id="login-btn" class="btn btn-p">Login</div>
+               <div  id="register-btn" class="btn btn-s">Register</div>
+           </div>
+           
+
+       </div>
+   </nav> 
+
+
+   <div class="sidebar">
+       <div class="sidebar-content">
+           <div class="sidebar-top">
+               <ul>
+                   <a href="/Dashboard" class="mmm" data-link><li class="side-meni"><span class="mdi mdi-home ic"></span> Dashboard</li></a>
+                   <a href="/Wallet" data-link><li class="side-meni"><span class="mdi mdi-wallet ic"></span> Wallet</li></a>
+                   <li class="side-meni"><span class="mdi mdi-arrow-top-right ic"></span> Shipments</li>
+                   <li class="side-meni"><span class="mdi mdi-home ic"></span> Dashboard</li>
+               </ul>
+           </div>
+
+           <div class="sidebar-bottom">
+            <ul>
+                
+                <li class="side-meni-alt"><span class="mdi mdi-cog ic"></span> Setting</li>
+                <li class="side-meni-alt"><span class="mdi mdi-logout ic"></span> Logout</li>
+            </ul>
+
+            <p class="tiny-font"> Developed by Xpletsquare &copy; Alcott 2021</p>
+        </div>
+       </div>
+
+
+   </div>
+
+
+   <section id="app" class="dashmain-holder" >
+       <!-- start -->
+      
+       <!-- end -->
+   </section>
+
+     <!-- loader -->
+     <div class="loader-screen">
+        <div class="loader-holder">
+            <div class="loader-logo">
+                <img src="../assets/photos/logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="lineer">
+            <div class="liner-fill"></div>
+        </div>
+        
+    </div>
+    <!-- page loader -->
+
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./loader.js"></script>
+<script src="./assets/js/cookiecheck.js"></script>
+<script src="./assets/js/cookiecheck.js"></script>
+<script src="./assets/js/cookieExtractor.js"></script>
+<script src="./assets/js/dashboardDOM.js"></script>
+<script src="./data.js"></script>
+<script src="table-updater.js"></script>
+<script src="./dashboard/table-updater.js"></script>
+<script src="./assets/js/input-focus.js"></script>
+
+<!-- <script src="../assets/js/input-focus.js"></script> -->
+<!-- <script src="../assets/js/loginSlider.js"></script> -->
+
+<script>
+    // let cursor = document.querySelector('.cursor');
+
+    // window.addEventListener('mousemove', changePos);
+
+    // function changePos(e){
+    //     cursor.style.top = e.pageY + 'px';
+    //     cursor.style.left = e.pageX + 'px';
+    // }
+
+    // sound
+    // let box = document.querySelectorAll('.card-box');
+    // let sound = document.querySelector('#sound');
+
+    
+
+    // box.forEach(element => {
+    //     element.addEventListener('mouseenter', function() {
+    //         sound.play();
+    //     });
+
+    //     element.addEventListener('mouseleave', function() {
+    //         sound.pause();
+    //         console.log('leave...');
+    //     });
+    // });
+    
+    // function playSound(){
+    //     sound.play();
+    // }
+</script>
+
+<!-- <script>
+    let carosel1 = document.querySelector('.shipping-choice-bg');
+    let cncle = document.querySelector('.cncle');
+    let new_shipment = document.querySelector('.new_shipment');
+
+    new_shipment.addEventListener('click', () => {
+        carosel1.classList.toggle('push-down');
+    });
+
+    cncle.addEventListener('click', ()=> {
+        carosel1.classList.toggle('push-down');
+    })
+    
+</script> -->
+<!-- 
+<script>
+
+
+let formslate = document.querySelector('.flex-form-slate');
+        let formNext = document.querySelector('.formNext');
+        let backk = document.querySelector('.backk');
+        let backk2 = document.querySelector('.backk2');
+        let proceedd = document.querySelector('.proceedd');
+        let lastItem = document.querySelector('.lst-itm');
+        let lastItem2 = document.querySelector('.lst-itm2');
+
+        formNext.addEventListener('click', pusher);
+        backk.addEventListener('click', pusher);
+        backk2.addEventListener('click', pusher200);
+        lastItem.addEventListener('keydown', keycheck);
+        lastItem2.addEventListener('keydown', keycheck2);
+        proceedd.addEventListener('click', pusher200)
+
+        function pusher(){
+            formslate.classList.toggle('pushm100');
+        };
+
+        function pusher200(){
+            formslate.classList.toggle('pushm200');
+        }
+
+
+        function keycheck(e){
+            // console.log(event.keyCode);
+            if (e.keyCode == 9 ){
+                pusher();
+            }
+        }
+        function keycheck2(e){
+            // console.log(event.keyCode);
+            if (e.keyCode == 9 ){
+                pusher200();
+            }
+        }
+
+</script> -->
